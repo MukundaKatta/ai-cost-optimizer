@@ -1,31 +1,64 @@
-# ai-cost-optimizer
+# Ai Cost Optimizer
 
-**Optimize AI infrastructure costs across cloud providers**
+Optimize AI infrastructure costs across cloud providers
 
-## Install
+## Features
+
+- Analyzers - Cache Analyzer
+Analyzers - Model Cost
+Api
+Collectors - Aws
+Collectors - Gcp
+Recommenders - Model Switching
+Recommenders - Rightsizing
+Reporting - Monthly Report
+
+## Tech Stack
+
+- **Language:** Python
+- **Framework:** FastAPI
+- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/MukundaKatta/ai-cost-optimizer.git
+cd ai-cost-optimizer
+pip install -r requirements.txt
 ```
 
-## Quick Start
-```python
-from src import __version__
+### Running
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Modules
-- **aws**
-- **gcp**
-- **model_cost**
-- **cache_analyzer**
-- **rightsizing**
-- **model_switching**
-- **monthly_report**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+ai-cost-optimizer/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
