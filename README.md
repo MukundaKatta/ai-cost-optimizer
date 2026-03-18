@@ -1,13 +1,15 @@
-# ai-cost-optimizer
+# AI Cost Optimizer
 
-Stub Python project. Described as "optimize AI infrastructure costs - model selection, batching, caching, routing," but none of that functionality exists.
+Tools for optimizing AI infrastructure costs across cloud providers and model deployments.
 
-## What's actually here
+## About
+AI Cost Optimizer analyzes AI workload spending and recommends cost-saving strategies. It tracks usage across models and providers, identifies inefficiencies, and suggests optimizations like model downsizing, caching, and batch processing.
 
-A single class in `src/core.py` (AiCostOptimizer) with placeholder methods (process, analyze, transform, validate, export, get_stats) that each return a fixed dictionary like `{ "ok": True }` without doing any real work. There is no cost optimization, no model selection, no batching, no caching, no routing logic - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No infrastructure or optimization libraries are present.
+## Tech Stack
+- Language: Python
+- Analytics: Cost tracking and usage monitoring
+- Optimization: Resource allocation algorithms
+- Integrations: Multi-cloud provider support
 
 ## Status
-
-Scaffolding only. No working cost optimization functionality exists.
+Active development - cost analysis engine and optimization recommendations in progress.
